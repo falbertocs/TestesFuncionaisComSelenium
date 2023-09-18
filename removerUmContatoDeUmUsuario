@@ -1,0 +1,20 @@
+@Test
+public void removerUmContatoDeUmUsuario(){
+	//identificar o numero do telefone //span[text"+551122223333"]/following-sibiling::a - Pega o texto +551122223333 e pega o proximo elemento a
+	navegador.findElement(By.xpath("//span[text"+551122223333"]/following-sibiling::a")).click();
+	
+	//Confirmar a janela do javascript
+	navegador.switchTo().alert().accept();
+	
+	//Validar que a mensagem apresentada foi um Rest in peace, dear phone!
+	WebElement mensagemPop = navegador.findElement(By.id("toast-container"));
+	String mensagem = mensagemPop.getText();
+	assertEquals("Rest in peace, dear phone!", mensagem);
+	
+	//Aguardar até 10 segundos para que a janela desapareça
+	WebDriverWait aguadar = new WebDriverWait(navegador, 10);
+	aguadar.until(ExpectConditions.stalenessOf(mensagemPop));
+	
+	//Clicar no link com texto logout
+	navegador.findElement.(By.linkText("Logout").click
+}
