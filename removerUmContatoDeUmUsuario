@@ -1,3 +1,26 @@
+informacoesDoUsarioTest {// Toda Classe de teste deve terminar com a palavra teste no final
+
+import static org.junit.Assert.*; //Quero fazer uma importação estatica de todos os métodos assert.
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.ChromeDriver;
+
+public class informacoesDoUsarioTest
+@Test
+
+//Todo método de teste deve ser publico deve ser vazio e iniciar com test
+public void testAdicionarUmaInformacaoAdicionalDoUsuario() {
+	// Abrindo o navegador
+	System.setProperty("webdriver.chrome.driver","C:\\Users\\fabio\\OneDrive\\Drivers\\chromediver.exe"); 
+	WebDriver navegador = new chromediver();
+	
+	//navegando para uma pagina taskit
+	navegador.get("http://www.juliodelima.com.br");
+	
+	Assert.assertEquals (1, 1);
+
+}
+
 @Test
 public void removerUmContatoDeUmUsuario(){
 	//identificar o numero do telefone //span[text"+551122223333"]/following-sibiling::a - Pega o texto +551122223333 e pega o proximo elemento a
