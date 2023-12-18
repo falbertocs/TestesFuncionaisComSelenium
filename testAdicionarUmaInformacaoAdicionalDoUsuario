@@ -1,0 +1,43 @@
+package webdriverJava;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import static org.junit.Assert.*;
+
+import junit.framework.Assert;
+
+public class informacoesUsuarioTest {
+	public static void main(String[] args) {
+	}
+	@Test
+	public void testAdicionarUmaInformacaoAdicionalDoUsuario() {
+		// Abrindo o navegador 
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\FabioAlbertoCruzeSil\\eclipse-workspace\\webdriverJava\\src\\chromedriver-win64\\chromedriver.exe");
+		WebDriver navegador = new ChromeDriver();
+		
+		// Navegando para a página do Taskit!
+		navegador.get("https://www.juliodelima.com.br/taskit/");
+		
+		// Clicar no link que possui o texto "Sing in"
+		
+		// Clinar no campo com o name "Login" que está dentro do formulário de id="signinbox"
+		
+		// Digitar no campo de name "Login" que está dentro do formulário de id="signinbox"
+		
+		// Clicar no campo de name "password" que está dentro do formulário de id="signinbox"
+		
+		// Digitar no campo name "password" que está dentro do formulário de id="signinbox"
+		
+		// Clicar no link com o texto "SIGN IN" - O que o usuário ver
+		
+		// Validar que dentro do elemento class me possui o texto Hi, Fabio Alberto Cruz e
+		
+		// Fechar o navegador 
+		//Validação
+		Assert.assertEquals(1, 1);
+	}
+	
+	
+}
+
